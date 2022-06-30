@@ -1,0 +1,10 @@
+group: management
+apiVersion: v1alpha1
+kind: ReleaseTag
+name: v1
+metadata:
+  scope:
+    kind: VirtualAPI
+    name: musicalinstruments
+spec:
+  releaseType: major

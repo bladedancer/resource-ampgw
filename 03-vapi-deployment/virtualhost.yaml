@@ -1,0 +1,15 @@
+apiVersion: v1alpha1
+group: management
+kind: VirtualHost
+name: musical-host
+metadata:
+  scope:
+    kind: Environment
+    name: dxdemo
+tags:
+  - v1
+spec:
+  domain: "musical.dxdemo.sandbox.ampc.axwaytest.net"
+  secret:
+    kind: ExternalSecret
+    name: musical-secret

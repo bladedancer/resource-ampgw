@@ -1,0 +1,14 @@
+group: catalog
+apiVersion: v1alpha1
+kind: AssetMapping
+name: musical
+metadata:
+  scope:
+    kind: Asset
+    name: musical
+spec:
+  inputs:
+    apiService: management/dxdemo/musicalinstruments
+    apiServiceRevision: management/dxdemo/musicalinstruments-1.0.0-rev
+    apiServiceInstance: management/dxdemo/musicalinstruments-ins
+    stage: production

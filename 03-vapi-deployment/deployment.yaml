@@ -1,0 +1,13 @@
+apiVersion: v1alpha1
+group: management
+kind: Deployment
+name: musical-deployment
+metadata:
+  scope:
+    kind: Environment
+    name: dxdemo
+tags:
+  - v1
+spec:
+  virtualAPIRelease: musicalinstruments-1.0.0
+  virtualHost: musical-host

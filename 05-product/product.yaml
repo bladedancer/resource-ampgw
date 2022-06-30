@@ -1,0 +1,9 @@
+group: catalog
+apiVersion: v1
+kind: Product
+name: musical
+title: Musical Stuff
+spec:
+  description: Selling Musical stuff. 
+  assets:
+    - name: musical

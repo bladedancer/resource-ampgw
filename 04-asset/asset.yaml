@@ -1,0 +1,8 @@
+group: catalog
+apiVersion: v1alpha1
+kind: Asset
+name: musical
+title: Musical
+spec:
+  type: API
+  description: MusicalInstruments digital entity.

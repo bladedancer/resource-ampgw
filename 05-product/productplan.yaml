@@ -1,0 +1,37 @@
+group: catalog
+apiVersion: v1alpha1
+kind: ProductPlanUnit
+title: Transactions
+name: transactions
+spec:
+  description: Counting transactions.
+---
+group: catalog
+apiVersion: v1alpha1
+kind: ProductPlan
+name: freemusic
+title: Free Music
+spec:
+  product: musical
+  type: free
+---
+group: catalog
+apiVersion: v1
+kind: Quota
+name: musicquota
+title: Music Quota
+metadata:
+  scope:
+    kind: ProductPlan
+    name: freemusic
+spec:
+  unit: transactions
+  pricing:
+    type: fixed
+    limit:
+      type: strict
+      value: 1000
+    interval: monthly
+  resources:
+    - kind: AssetResource
+      name: musical/dxdemo-musicalinstruments-1.0.0-rev-musicalinstruments-ins

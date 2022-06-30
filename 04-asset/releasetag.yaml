@@ -1,0 +1,10 @@
+group: catalog
+apiVersion: v1alpha1
+kind: ReleaseTag
+name: v1
+metadata:
+  scope:
+    kind: Asset
+    name: musical
+spec:
+  releaseType: major

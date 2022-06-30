@@ -13,3 +13,5 @@ axway --env $PLATFORM_ENV service-account remove $ENVIRONMENT
 
 axway --env $PLATFORM_ENV central delete watchtopic dxdemo-governanceagents -y
 axway --env $PLATFORM_ENV central delete watchtopic dxdemo-traceabilityagents -y
+
+axway --env $PLATFORM_ENV central get authprofile -o json | jq -r .[].name | xargs -L1 -I'{}' axway central delete authprofile -y {}

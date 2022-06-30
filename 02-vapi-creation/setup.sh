@@ -8,7 +8,7 @@ echo === Create Virtual API
 echo ================================
 axway --env $PLATFORM_ENV central apply -f $SOURCE_DIR/musicalinstruments-vapi.yaml
 
-sleep 10
+sleep 20
 
 echo ================================
 echo === Release Virtual API 

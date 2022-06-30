@@ -12,3 +12,5 @@ jq 'del(.references)|.state="archived"' ${deprecated}.json > $archived.json
 axway --env $PLATFORM_ENV central apply -f ${archived}.json
 
 axway --env $PLATFORM_ENV central delete asset musical -y
+
+axway --env $PLATFORM_ENV central delete stage production -y

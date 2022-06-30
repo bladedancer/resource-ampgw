@@ -10,3 +10,6 @@ sleep 10
 kubectl delete namespace ${AMGPW_NAMESPACE}
 
 axway --env $PLATFORM_ENV service-account remove $ENVIRONMENT
+
+axway --env $PLATFORM_ENV central delete watchtopic dxdemo-governanceagents -y
+axway --env $PLATFORM_ENV central delete watchtopic dxdemo-traceabilityagents -y
